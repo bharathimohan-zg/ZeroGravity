@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-zerogravity/Pods-zerogravity-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
+${BUILT_PRODUCTS_DIR}/CenteredCollectionView/CenteredCollectionView.framework
+${BUILT_PRODUCTS_DIR}/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.framework
+${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework
+${BUILT_PRODUCTS_DIR}/ScrollableSegmentedControl/ScrollableSegmentedControl.framework
+${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework

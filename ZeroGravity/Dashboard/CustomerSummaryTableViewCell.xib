@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-L.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="summaryIdentifier" rowHeight="190" id="KGk-i7-Jjw" customClass="CustomerSummaryTableViewCell" customModule="zerogravity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-xA-kqV" userLabel="CustomerInfoView">
+                        <rect key="frame" x="0.0" y="14" width="320" height="159.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Customer Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxG-HK-CQ7">
+                                <rect key="frame" x="15" y="10" width="178" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lHC-uv-xm7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quotation No:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zln-PR-2bS">
+                                <rect key="frame" x="203" y="10" width="102" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xM1-ZA-1om"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1900111" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1Z-iv-L5c">
+                                <rect key="frame" x="241" y="36" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wWO-yK-2CL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Vikas Alagarsamy" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nef-oK-h6W">
+                                <rect key="frame" x="15" y="36" width="216" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="a2f-Rk-jzW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 50,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqj-gS-2Xp">
+                                <rect key="frame" x="242.5" y="103" width="62.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ex3-s0-zp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 2,00,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhi-Bf-CkN">
+                                <rect key="frame" x="229.5" y="77" width="75.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8Rb-qA-wFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Advance Paid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvh-Yi-qBh">
+                                <rect key="frame" x="15" y="103" width="197.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wLm-qT-Zr7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 1,50,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an5-88-0M5">
+                                <rect key="frame" x="229.5" y="129" width="75.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ssa-JL-ewy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total Package" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeF-nZ-rV1">
+                                <rect key="frame" x="15" y="77" width="184.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QyZ-uW-yZB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Remaining Due" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4j-za-3pM">
+                                <rect key="frame" x="15" y="129" width="184.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EuA-gu-cm2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F1Z-iv-L5c" firstAttribute="leading" secondItem="Nef-oK-h6W" secondAttribute="trailing" constant="10" id="1uJ-at-k9q"/>
+                            <constraint firstAttribute="trailing" secondItem="an5-88-0M5" secondAttribute="trailing" constant="15" id="2Hy-nb-kJM"/>
+                            <constraint firstItem="Nef-oK-h6W" firstAttribute="top" secondItem="HxG-HK-CQ7" secondAttribute="bottom" constant="5" id="5TO-dk-c78"/>
+                            <constraint firstItem="MeF-nZ-rV1" firstAttribute="top" secondItem="Nef-oK-h6W" secondAttribute="bottom" constant="20" id="9SL-04-eoE"/>
+                            <constraint firstItem="Xhi-Bf-CkN" firstAttribute="top" secondItem="F1Z-iv-L5c" secondAttribute="bottom" constant="20" id="CS9-2X-ncu"/>
+                            <constraint firstAttribute="trailing" secondItem="Xhi-Bf-CkN" secondAttribute="trailing" constant="15" id="FBh-Si-l4u"/>
+                            <constraint firstItem="Cvh-Yi-qBh" firstAttribute="top" secondItem="MeF-nZ-rV1" secondAttribute="bottom" constant="5" id="FmJ-LV-aoi"/>
+                            <constraint firstItem="zln-PR-2bS" firstAttribute="top" secondItem="Q0F-xA-kqV" secondAttribute="top" constant="10" id="G0a-X9-vjD"/>
+                            <constraint firstAttribute="trailing" secondItem="zln-PR-2bS" secondAttribute="trailing" constant="15" id="GGF-pF-RgH"/>
+                            <constraint firstAttribute="bottom" secondItem="X4j-za-3pM" secondAttribute="bottom" constant="9.5" id="IFq-8r-THQ"/>
+                            <constraint firstItem="X4j-za-3pM" firstAttribute="leading" secondItem="Q0F-xA-kqV" secondAttribute="leading" constant="15" id="JYa-xp-qSI"/>
+                            <constraint firstItem="zln-PR-2bS" firstAttribute="leading" secondItem="HxG-HK-CQ7" secondAttribute="trailing" constant="10" id="Lgs-mJ-b7i"/>
+                            <constraint firstItem="Qqj-gS-2Xp" firstAttribute="leading" secondItem="Cvh-Yi-qBh" secondAttribute="trailing" constant="30" id="Qop-1i-2Fk"/>
+                            <constraint firstItem="Nef-oK-h6W" firstAttribute="leading" secondItem="Q0F-xA-kqV" secondAttribute="leading" constant="15" id="ZGr-eq-wIg"/>
+                            <constraint firstItem="an5-88-0M5" firstAttribute="top" secondItem="Qqj-gS-2Xp" secondAttribute="bottom" constant="5" id="Zy7-9H-cKn"/>
+                            <constraint firstItem="X4j-za-3pM" firstAttribute="top" secondItem="Cvh-Yi-qBh" secondAttribute="bottom" constant="5" id="aSN-1I-ZOO"/>
+                            <constraint firstItem="MeF-nZ-rV1" firstAttribute="leading" secondItem="Q0F-xA-kqV" secondAttribute="leading" constant="15" id="d6G-Yj-rpY"/>
+                            <constraint firstItem="F1Z-iv-L5c" firstAttribute="top" secondItem="zln-PR-2bS" secondAttribute="bottom" constant="5" id="emR-WT-s3M"/>
+                            <constraint firstAttribute="bottom" secondItem="an5-88-0M5" secondAttribute="bottom" constant="9.5" id="f3W-BR-8ud"/>
+                            <constraint firstAttribute="trailing" secondItem="Qqj-gS-2Xp" secondAttribute="trailing" constant="15" id="fcJ-MN-2vT"/>
+                            <constraint firstItem="HxG-HK-CQ7" firstAttribute="leading" secondItem="Q0F-xA-kqV" secondAttribute="leading" constant="15" id="gbC-Aw-5GI"/>
+                            <constraint firstItem="an5-88-0M5" firstAttribute="leading" secondItem="X4j-za-3pM" secondAttribute="trailing" constant="30" id="ik0-vK-3sU"/>
+                            <constraint firstItem="Cvh-Yi-qBh" firstAttribute="leading" secondItem="Q0F-xA-kqV" secondAttribute="leading" constant="15" id="opd-az-Sqp"/>
+                            <constraint firstItem="HxG-HK-CQ7" firstAttribute="top" secondItem="Q0F-xA-kqV" secondAttribute="top" constant="10" id="s3u-qU-eVa"/>
+                            <constraint firstItem="Xhi-Bf-CkN" firstAttribute="leading" secondItem="MeF-nZ-rV1" secondAttribute="trailing" constant="30" id="veY-mG-T4J"/>
+                            <constraint firstItem="Qqj-gS-2Xp" firstAttribute="top" secondItem="Xhi-Bf-CkN" secondAttribute="bottom" constant="5" id="wNR-ft-NqP"/>
+                            <constraint firstAttribute="trailing" secondItem="F1Z-iv-L5c" secondAttribute="trailing" constant="15" id="wf5-rT-TXs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Q0F-xA-kqV" secondAttribute="trailing" id="73h-To-YzL"/>
+                    <constraint firstAttribute="bottom" secondItem="Q0F-xA-kqV" secondAttribute="bottom" constant="15" id="F8F-fe-EDV"/>
+                    <constraint firstItem="Q0F-xA-kqV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jdt-Kw-sG6"/>
+                    <constraint firstItem="Q0F-xA-kqV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Mn5-Yf-arj"/>
+                    <constraint firstItem="Q0F-xA-kqV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RsO-Qr-bLS"/>
+                    <constraint firstAttribute="trailing" secondItem="Q0F-xA-kqV" secondAttribute="trailing" id="dTP-ZQ-DBR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adfvancePaid" destination="Qqj-gS-2Xp" id="T16-tC-1YN"/>
+                <outlet property="customerName" destination="Nef-oK-h6W" id="ihh-O2-A3b"/>
+                <outlet property="quotationNo" destination="F1Z-iv-L5c" id="EBk-TW-b2T"/>
+                <outlet property="remainingDue" destination="an5-88-0M5" id="J5p-at-Dxf"/>
+                <outlet property="totalPackage" destination="Xhi-Bf-CkN" id="eVZ-Kv-FBY"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

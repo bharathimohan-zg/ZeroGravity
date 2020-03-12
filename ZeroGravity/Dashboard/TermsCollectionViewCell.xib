@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TermsIdentifier" id="gTV-IL-0wX" customClass="TermsCollectionViewCell" customModule="zerogravity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TGo-hI-ycn">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="Vt8-fE-MWH"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="dkx-WZ-oEn"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TGo-hI-ycn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9IT-Ja-wyd"/>
+                <constraint firstAttribute="bottom" secondItem="TGo-hI-ycn" secondAttribute="bottom" id="ZX2-RO-VK0"/>
+                <constraint firstAttribute="trailing" secondItem="TGo-hI-ycn" secondAttribute="trailing" id="cxX-5g-fHh"/>
+                <constraint firstItem="TGo-hI-ycn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dPc-pZ-qX6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="paymentTypeTable" destination="TGo-hI-ycn" id="tLV-XY-Soj"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="85.714285714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

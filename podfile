@@ -1,0 +1,10 @@
+use_frameworks!
+target 'zerogravity' do
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+    pod 'CenteredCollectionView'
+    pod 'ScrollableSegmentedControl', '~> 1.5.0'
+    pod 'UICircularProgressRing'
+    pod 'FlexibleSteppedProgressBar'
+    pod 'RAMAnimatedTabBarController'
+end
