@@ -10,9 +10,21 @@
 		A49A9F4E9D2CF2C4DF5763F5 /* Pods_zerogravity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82E56E323AD0B9A949292F8 /* Pods_zerogravity.framework */; };
 		CF0B329C230284B9007BB822 /* Ubuntu-L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF0B329B230284B9007BB822 /* Ubuntu-L.ttf */; };
 		CF0B329D230284C3007BB822 /* Ubuntu-L.ttf in Sources */ = {isa = PBXBuildFile; fileRef = CF0B329B230284B9007BB822 /* Ubuntu-L.ttf */; };
+		CF1D9A94246467E400BFE3D2 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D9A93246467E400BFE3D2 /* CarouselViewController.swift */; };
+		CF1D9A97246467F500BFE3D2 /* CarouselItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1D9A95246467F500BFE3D2 /* CarouselItem.xib */; };
+		CF1D9A98246467F500BFE3D2 /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D9A96246467F500BFE3D2 /* CarouselItem.swift */; };
+		CF1D9A9A2464680100BFE3D2 /* CarouselPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D9A992464680000BFE3D2 /* CarouselPageViewController.swift */; };
+		CF1D9A9C246498AB00BFE3D2 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1D9A9B246498AA00BFE3D2 /* Event.storyboard */; };
+		CF1D9A9E2464994D00BFE3D2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D9A9D2464994D00BFE3D2 /* EventViewController.swift */; };
+		CF27FBB22469DFFC00648CAE /* LoginType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF27FBB12469DFFC00648CAE /* LoginType.storyboard */; };
+		CF27FBB42469E25700648CAE /* LoginTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27FBB32469E25700648CAE /* LoginTypeViewController.swift */; };
 		CF3248522315AF3B002844E8 /* InvoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3248512315AF3B002844E8 /* InvoiceTableViewCell.swift */; };
 		CF3248542315AF59002844E8 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3248532315AF59002844E8 /* AddressTableViewCell.swift */; };
 		CF3341CB233BB9830052E50B /* ManageAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3341CA233BB9830052E50B /* ManageAddressViewController.swift */; };
+		CF384D34246C2FFE000B98C4 /* QuotationTabalviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF384D32246C2FFE000B98C4 /* QuotationTabalviewCell.swift */; };
+		CF384D35246C2FFE000B98C4 /* QuotationTabalviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF384D33246C2FFE000B98C4 /* QuotationTabalviewCell.xib */; };
+		CF384D38246C3CCE000B98C4 /* QuotationHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF384D36246C3CCE000B98C4 /* QuotationHeaderTableViewCell.swift */; };
+		CF384D39246C3CCE000B98C4 /* QuotationHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF384D37246C3CCE000B98C4 /* QuotationHeaderTableViewCell.xib */; };
 		CF4319F623193AD6005523B3 /* PaymentProcessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4319F423193AD6005523B3 /* PaymentProcessTableViewCell.swift */; };
 		CF4319F723193AD6005523B3 /* PaymentProcessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4319F523193AD6005523B3 /* PaymentProcessTableViewCell.xib */; };
 		CF4319FA23193B70005523B3 /* CustomerSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4319F823193B70005523B3 /* CustomerSummaryTableViewCell.swift */; };
@@ -35,10 +47,14 @@
 		CF46DFAD23336C330085361E /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46DFAA23336C330085361E /* UIImage+UIColor.swift */; };
 		CF48AE12230E3D6300DFA5B5 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48AE11230E3D6300DFA5B5 /* NotificationViewController.swift */; };
 		CF48AE14230E4B2F00DFA5B5 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF48AE13230E4B2F00DFA5B5 /* NotificationTableViewCell.swift */; };
+		CF5303F8247BD3190005062A /* AnnularLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5303F5247BD3180005062A /* AnnularLayer.swift */; };
+		CF5303F9247BD3190005062A /* LineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5303F6247BD3180005062A /* LineLayer.swift */; };
+		CF5303FA247BD3190005062A /* StepIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5303F7247BD3190005062A /* StepIndicatorView.swift */; };
 		CF6C90D9233E13F900A260E9 /* EventFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C90D8233E13F900A260E9 /* EventFlowViewController.swift */; };
 		CF6C90DB233E14AA00A260E9 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C90DA233E14AA00A260E9 /* EventTableViewCell.swift */; };
 		CF6CC387230ECC7800D3EFA2 /* ReferFriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CC386230ECC7800D3EFA2 /* ReferFriendTableViewCell.swift */; };
 		CF6CC389230ECCA200D3EFA2 /* ReferFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6CC388230ECCA200D3EFA2 /* ReferFriendViewController.swift */; };
+		CF73F5A12476FC8000249284 /* ScrollableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF73F5A02476FC8000249284 /* ScrollableSegmentedControl.swift */; };
 		CF94BA9A231E508000FFFE12 /* TermsStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94BA98231E508000FFFE12 /* TermsStatusTableViewCell.swift */; };
 		CF94BA9B231E508000FFFE12 /* TermsStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF94BA99231E508000FFFE12 /* TermsStatusTableViewCell.xib */; };
 		CFBE8BE92316BF9E000D107A /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBE8BE82316BF9E000D107A /* BlogViewController.swift */; };
@@ -77,9 +93,21 @@
 		9AD99409A57291411DAF3E6F /* Pods-zerogravity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zerogravity.debug.xcconfig"; path = "Target Support Files/Pods-zerogravity/Pods-zerogravity.debug.xcconfig"; sourceTree = "<group>"; };
 		A30E6F35E2C5F2F6350E2FEC /* Pods-zerogravity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zerogravity.release.xcconfig"; path = "Target Support Files/Pods-zerogravity/Pods-zerogravity.release.xcconfig"; sourceTree = "<group>"; };
 		CF0B329B230284B9007BB822 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		CF1D9A93246467E400BFE3D2 /* CarouselViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		CF1D9A95246467F500BFE3D2 /* CarouselItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselItem.xib; sourceTree = "<group>"; };
+		CF1D9A96246467F500BFE3D2 /* CarouselItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
+		CF1D9A992464680000BFE3D2 /* CarouselPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselPageViewController.swift; sourceTree = "<group>"; };
+		CF1D9A9B246498AA00BFE3D2 /* Event.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Event.storyboard; sourceTree = "<group>"; };
+		CF1D9A9D2464994D00BFE3D2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		CF27FBB12469DFFC00648CAE /* LoginType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginType.storyboard; sourceTree = "<group>"; };
+		CF27FBB32469E25700648CAE /* LoginTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypeViewController.swift; sourceTree = "<group>"; };
 		CF3248512315AF3B002844E8 /* InvoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTableViewCell.swift; sourceTree = "<group>"; };
 		CF3248532315AF59002844E8 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
 		CF3341CA233BB9830052E50B /* ManageAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAddressViewController.swift; sourceTree = "<group>"; };
+		CF384D32246C2FFE000B98C4 /* QuotationTabalviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationTabalviewCell.swift; sourceTree = "<group>"; };
+		CF384D33246C2FFE000B98C4 /* QuotationTabalviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotationTabalviewCell.xib; sourceTree = "<group>"; };
+		CF384D36246C3CCE000B98C4 /* QuotationHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		CF384D37246C3CCE000B98C4 /* QuotationHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotationHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		CF4319F423193AD6005523B3 /* PaymentProcessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProcessTableViewCell.swift; sourceTree = "<group>"; };
 		CF4319F523193AD6005523B3 /* PaymentProcessTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentProcessTableViewCell.xib; sourceTree = "<group>"; };
 		CF4319F823193B70005523B3 /* CustomerSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSummaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -102,10 +130,14 @@
 		CF46DFAA23336C330085361E /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
 		CF48AE11230E3D6300DFA5B5 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		CF48AE13230E4B2F00DFA5B5 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		CF5303F5247BD3180005062A /* AnnularLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnularLayer.swift; sourceTree = "<group>"; };
+		CF5303F6247BD3180005062A /* LineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineLayer.swift; sourceTree = "<group>"; };
+		CF5303F7247BD3190005062A /* StepIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepIndicatorView.swift; sourceTree = "<group>"; };
 		CF6C90D8233E13F900A260E9 /* EventFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFlowViewController.swift; sourceTree = "<group>"; };
 		CF6C90DA233E14AA00A260E9 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		CF6CC386230ECC7800D3EFA2 /* ReferFriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferFriendTableViewCell.swift; sourceTree = "<group>"; };
 		CF6CC388230ECCA200D3EFA2 /* ReferFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferFriendViewController.swift; sourceTree = "<group>"; };
+		CF73F5A02476FC8000249284 /* ScrollableSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableSegmentedControl.swift; sourceTree = "<group>"; };
 		CF94BA98231E508000FFFE12 /* TermsStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsStatusTableViewCell.swift; sourceTree = "<group>"; };
 		CF94BA99231E508000FFFE12 /* TermsStatusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsStatusTableViewCell.xib; sourceTree = "<group>"; };
 		CFBE8BE82316BF9E000D107A /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +214,16 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
+		CF5303F4247BD2ED0005062A /* StepIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				CF5303F5247BD3180005062A /* AnnularLayer.swift */,
+				CF5303F6247BD3180005062A /* LineLayer.swift */,
+				CF5303F7247BD3190005062A /* StepIndicatorView.swift */,
+			);
+			path = StepIndicator;
+			sourceTree = "<group>";
+		};
 		CF6245DF230D113200E7D01F /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE19FE22301764D00C06356 /* CustomerDashBoardViewController.swift */,
+				CF73F5A02476FC8000249284 /* ScrollableSegmentedControl.swift */,
 				CF46DFA42332890D0085361E /* CollapsibleTableViewHeader.swift */,
 				CF4319F423193AD6005523B3 /* PaymentProcessTableViewCell.swift */,
 				CF4319F523193AD6005523B3 /* PaymentProcessTableViewCell.xib */,
@@ -239,11 +282,16 @@
 				CF94BA98231E508000FFFE12 /* TermsStatusTableViewCell.swift */,
 				CF94BA99231E508000FFFE12 /* TermsStatusTableViewCell.xib */,
 				CF431A04231948E6005523B3 /* ProgressTableViewCell.swift */,
+				CF431A05231948E6005523B3 /* ProgressTableViewCell.xib */,
+				CF384D32246C2FFE000B98C4 /* QuotationTabalviewCell.swift */,
+				CF384D33246C2FFE000B98C4 /* QuotationTabalviewCell.xib */,
+				CF384D36246C3CCE000B98C4 /* QuotationHeaderTableViewCell.swift */,
+				CF384D37246C3CCE000B98C4 /* QuotationHeaderTableViewCell.xib */,
 				CF46DFA823336C330085361E /* CGPoint+JK.swift */,
 				CF46DFA923336C330085361E /* NSAttributedString+JK.swift */,
 				CF46DFAA23336C330085361E /* UIImage+UIColor.swift */,
 				CF46DFA623336C0B0085361E /* SteppedProgressBar.swift */,
-				CF431A05231948E6005523B3 /* ProgressTableViewCell.xib */,
+				CF5303F4247BD2ED0005062A /* StepIndicator */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -348,6 +396,12 @@
 		CFE19FC82301659400C06356 /* ZeroGravity */ = {
 			isa = PBXGroup;
 			children = (
+				CF1D9A96246467F500BFE3D2 /* CarouselItem.swift */,
+				CF1D9A95246467F500BFE3D2 /* CarouselItem.xib */,
+				CF1D9A93246467E400BFE3D2 /* CarouselViewController.swift */,
+				CF1D9A9D2464994D00BFE3D2 /* EventViewController.swift */,
+				CF1D9A992464680000BFE3D2 /* CarouselPageViewController.swift */,
+				CF27FBB32469E25700648CAE /* LoginTypeViewController.swift */,
 				CF6245DF230D113200E7D01F /* LogIn */,
 				CF6245E0230D116200E7D01F /* Home */,
 				CF6245E3230D11BD00E7D01F /* Dashboard */,
@@ -357,9 +411,11 @@
 				CFE19FE12301762A00C06356 /* CardView */,
 				CF0B329A2302849E007BB822 /* CustomFont */,
 				CFE19FC92301659400C06356 /* AppDelegate.swift */,
+				CF27FBB12469DFFC00648CAE /* LoginType.storyboard */,
 				CFE19FCD2301659400C06356 /* Main.storyboard */,
-				CFE19FD02301659500C06356 /* Assets.xcassets */,
+				CF1D9A9B246498AA00BFE3D2 /* Event.storyboard */,
 				CFE19FD22301659500C06356 /* LaunchScreen.storyboard */,
+				CFE19FD02301659500C06356 /* Assets.xcassets */,
 				CFE19FD52301659500C06356 /* Info.plist */,
 			);
 			path = ZeroGravity;
@@ -412,7 +468,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Bharathimohan;
 				TargetAttributes = {
 					CFE19FC52301659400C06356 = {
@@ -449,10 +505,15 @@
 				CF94BA9B231E508000FFFE12 /* TermsStatusTableViewCell.xib in Resources */,
 				CF4319FB23193B70005523B3 /* CustomerSummaryTableViewCell.xib in Resources */,
 				CF0B329C230284B9007BB822 /* Ubuntu-L.ttf in Resources */,
+				CF384D39246C3CCE000B98C4 /* QuotationHeaderTableViewCell.xib in Resources */,
+				CF27FBB22469DFFC00648CAE /* LoginType.storyboard in Resources */,
 				CFC0510A230EBC7B0021B3C6 /* Ubuntu-BI.ttf in Resources */,
 				CF431A07231948E6005523B3 /* ProgressTableViewCell.xib in Resources */,
+				CF1D9A97246467F500BFE3D2 /* CarouselItem.xib in Resources */,
 				CFC05104230EBBD10021B3C6 /* Ubuntu-B.ttf in Resources */,
 				CFE19FD42301659500C06356 /* LaunchScreen.storyboard in Resources */,
+				CF384D35246C2FFE000B98C4 /* QuotationTabalviewCell.xib in Resources */,
+				CF1D9A9C246498AB00BFE3D2 /* Event.storyboard in Resources */,
 				CFC05106230EBBE10021B3C6 /* Ubuntu-C.ttf in Resources */,
 				CFE19FD12301659500C06356 /* Assets.xcassets in Resources */,
 				CFE19FCF2301659400C06356 /* Main.storyboard in Resources */,
@@ -510,11 +571,14 @@
 			files = (
 				CFC0510B230EBC8A0021B3C6 /* Ubuntu-BI.ttf in Sources */,
 				CFE9C471230F2D06002C10B9 /* SummarySeconTableViewCell.swift in Sources */,
+				CF1D9A9E2464994D00BFE3D2 /* EventViewController.swift in Sources */,
 				CF46DFA52332890D0085361E /* CollapsibleTableViewHeader.swift in Sources */,
 				CFC05107230EBC110021B3C6 /* Ubuntu-C.ttf in Sources */,
 				CFE9C46B230F2918002C10B9 /* MyOrderListTableViewCell.swift in Sources */,
+				CF27FBB42469E25700648CAE /* LoginTypeViewController.swift in Sources */,
 				CF6CC387230ECC7800D3EFA2 /* ReferFriendTableViewCell.swift in Sources */,
 				CF3248522315AF3B002844E8 /* InvoiceTableViewCell.swift in Sources */,
+				CF384D38246C3CCE000B98C4 /* QuotationHeaderTableViewCell.swift in Sources */,
 				CF4319FE231944A7005523B3 /* PaymentTermsTableViewCell.swift in Sources */,
 				CFC05108230EBC110021B3C6 /* Ubuntu-B.ttf in Sources */,
 				CF0B329D230284C3007BB822 /* Ubuntu-L.ttf in Sources */,
@@ -525,22 +589,29 @@
 				CF48AE12230E3D6300DFA5B5 /* NotificationViewController.swift in Sources */,
 				CF4335C42303449800D550A6 /* HomeTableViewCell.swift in Sources */,
 				CFF62100233A882A0046AB57 /* HelpSupportViewController.swift in Sources */,
+				CF1D9A98246467F500BFE3D2 /* CarouselItem.swift in Sources */,
 				CF6C90D9233E13F900A260E9 /* EventFlowViewController.swift in Sources */,
 				CF4335C22303204D00D550A6 /* orderTableViewCell.swift in Sources */,
 				CFDCC65B23140D33003E9F08 /* OrderDetailsTableViewCell.swift in Sources */,
 				CFE9C46F230F2CEF002C10B9 /* SummaryTableViewCell.swift in Sources */,
+				CF1D9A9A2464680100BFE3D2 /* CarouselPageViewController.swift in Sources */,
 				CF43D6E12301BB0200F0976B /* AccountViewController.swift in Sources */,
 				CFDCC65623140C50003E9F08 /* CustomerInfoTableViewCell.swift in Sources */,
+				CF5303F9247BD3190005062A /* LineLayer.swift in Sources */,
 				CFE05A6D230C72D00007DD3E /* HorizontalPeekingPagesCollectionViewController.swift in Sources */,
 				CFE9C469230F28E1002C10B9 /* MyorderListViewController.swift in Sources */,
 				CF48AE14230E4B2F00DFA5B5 /* NotificationTableViewCell.swift in Sources */,
 				CF431A06231948E6005523B3 /* ProgressTableViewCell.swift in Sources */,
 				CFE19FCC2301659400C06356 /* LoginViewController.swift in Sources */,
+				CF5303FA247BD3190005062A /* StepIndicatorView.swift in Sources */,
 				CF46DFAD23336C330085361E /* UIImage+UIColor.swift in Sources */,
 				CF46DFAB23336C330085361E /* CGPoint+JK.swift in Sources */,
+				CF5303F8247BD3190005062A /* AnnularLayer.swift in Sources */,
 				CFE19FDC2301688B00C06356 /* BaseCardView.swift in Sources */,
 				CFE19FCA2301659400C06356 /* AppDelegate.swift in Sources */,
+				CF384D34246C2FFE000B98C4 /* QuotationTabalviewCell.swift in Sources */,
 				CFDCC6542313E5AE003E9F08 /* SummaryViewController.swift in Sources */,
+				CF73F5A12476FC8000249284 /* ScrollableSegmentedControl.swift in Sources */,
 				CF6CC389230ECCA200D3EFA2 /* ReferFriendViewController.swift in Sources */,
 				CFBE8BE92316BF9E000D107A /* BlogViewController.swift in Sources */,
 				CFE9C46D230F2B2E002C10B9 /* MyOrderSummaryViewController.swift in Sources */,
@@ -548,6 +619,7 @@
 				CFE19FE32301764D00C06356 /* CustomerDashBoardViewController.swift in Sources */,
 				CF94BA9A231E508000FFFE12 /* TermsStatusTableViewCell.swift in Sources */,
 				CF6C90DB233E14AA00A260E9 /* EventTableViewCell.swift in Sources */,
+				CF1D9A94246467E400BFE3D2 /* CarouselViewController.swift in Sources */,
 				CFDCC65923140CBC003E9F08 /* OrderInfoTableViewCell.swift in Sources */,
 				CF3248542315AF59002844E8 /* AddressTableViewCell.swift in Sources */,
 				CF43D6E32301BCCE00F0976B /* AccountTableViewCell.swift in Sources */,
@@ -614,7 +686,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -675,7 +747,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -703,9 +775,13 @@
 			baseConfigurationReference = 9AD99409A57291411DAF3E6F /* Pods-zerogravity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HAV6C2A97F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroGravity/Home/HomeCollectionView",
+				);
 				INFOPLIST_FILE = ZeroGravity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -724,9 +800,13 @@
 			baseConfigurationReference = A30E6F35E2C5F2F6350E2FEC /* Pods-zerogravity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HAV6C2A97F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroGravity/Home/HomeCollectionView",
+				);
 				INFOPLIST_FILE = ZeroGravity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

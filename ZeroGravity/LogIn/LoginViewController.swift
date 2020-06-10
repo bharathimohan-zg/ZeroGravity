@@ -14,8 +14,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.navigationBar.barTintColor = LoginViewController.hexStringToUIColor(hex: hexaColor)
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.hidesBackButton = true
+        UIApplication.shared.statusBarUIView?.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
         userTxtFld.setBottomBorder()
         pwdLoginTxtFld.setBottomBorder()
         if let templateImage = UIImage(named: "userIcon")?.withRenderingMode(.alwaysTemplate) {            let imageView = UIImageView(image: templateImage)
@@ -88,4 +90,9 @@ extension UITextField {
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 0.0
     }
+}
+// MARK: FONT
+
+enum FONT: String {
+    case Ubuntu = "Ubuntu-Light"
 }

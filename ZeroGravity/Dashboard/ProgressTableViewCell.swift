@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import FlexibleSteppedProgressBar
 class ProgressTableViewCell: UITableViewCell {
-    @IBOutlet weak var progressBar: SteppedProgressBar!
     var progressArray:[String] = []
     @IBOutlet weak var querisBtn: UIButton!
     @IBOutlet weak var addressTitle: UILabel!
@@ -17,6 +15,7 @@ class ProgressTableViewCell: UITableViewCell {
     @IBOutlet weak var addressLine1: UILabel!
     @IBOutlet weak var addressLine2: UILabel!
     @IBOutlet weak var zipcode: UILabel!
+    @IBOutlet weak var progressBar: StepIndicatorView!
     override func awakeFromNib() {
         super.awakeFromNib()
         setupprogressBar()
@@ -25,10 +24,9 @@ class ProgressTableViewCell: UITableViewCell {
         return UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
     }
     func setupprogressBar() {
-        progressBar.insets = inset
-        progressBar.stepDrawingMode = .fill
-        progressBar.titles = progressArray
-        progressBar.currentTab = 0
+        self.progressBar.statusArray = progressArray
+        self.progressBar.numberOfSteps = progressArray.count
+        self.progressBar.currentStep = 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

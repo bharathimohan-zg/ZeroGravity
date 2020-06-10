@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pd8-KP-vlN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Carousel View Controller-->
+        <scene sceneID="epj-Ja-p1a">
+            <objects>
+                <viewController storyboardIdentifier="CarouselViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mmV-2t-flg" customClass="CarouselViewController" customModule="zerogravity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bt-Vo-gw3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDR-D2-p0B">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <segue destination="LbK-ff-yhG" kind="embed" id="nYL-Pp-IYZ"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xDR-D2-p0B" firstAttribute="top" secondItem="1Ph-Qa-159" secondAttribute="top" id="4gB-Jj-DsT"/>
+                            <constraint firstItem="xDR-D2-p0B" firstAttribute="trailing" secondItem="1Ph-Qa-159" secondAttribute="trailing" id="8zd-x5-y9u"/>
+                            <constraint firstItem="xDR-D2-p0B" firstAttribute="leading" secondItem="1Ph-Qa-159" secondAttribute="leading" id="D4n-Ud-Mpc"/>
+                            <constraint firstItem="xDR-D2-p0B" firstAttribute="bottom" secondItem="1Ph-Qa-159" secondAttribute="bottom" id="X86-X3-0d5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Ph-Qa-159"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s8D-8z-5xD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYF-n0-tgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="-197"/>
+        </scene>
+        <!--Carousel Page View Controller-->
+        <scene sceneID="cvM-l2-1YN">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="LbK-ff-yhG" customClass="CarouselPageViewController" customModule="zerogravity" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eS-vL-egp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828.985507246377" y="451.33928571428567"/>
+        </scene>
+        <!--Login Type View Controller-->
+        <scene sceneID="uYh-kT-RZH">
+            <objects>
+                <viewController storyboardIdentifier="LoginTypeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MUR-li-JPH" customClass="LoginTypeViewController" customModule="zerogravity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xUh-ST-95k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQr-el-c3I">
+                                <rect key="frame" x="40" y="806" width="334" height="36"/>
+                                <color key="backgroundColor" red="0.99680942299999997" green="0.36613720659999999" blue="0.7255110145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="21"/>
+                                <state key="normal" title="Event">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="eventAction:" destination="MUR-li-JPH" eventType="touchUpInside" id="1fP-2F-F5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWt-c0-aoU">
+                                <rect key="frame" x="40" y="745" width="334" height="36"/>
+                                <color key="backgroundColor" red="0.99680942299999997" green="0.36613720659999999" blue="0.7255110145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="21"/>
+                                <state key="normal" title="Customer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="customerAction:" destination="MUR-li-JPH" eventType="touchUpInside" id="DeJ-Y3-AKv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oYz-KA-F9R" firstAttribute="trailing" secondItem="LQr-el-c3I" secondAttribute="trailing" constant="40" id="IMc-iQ-iUB"/>
+                            <constraint firstItem="LQr-el-c3I" firstAttribute="top" secondItem="UWt-c0-aoU" secondAttribute="bottom" constant="25" id="IPQ-AB-wJo"/>
+                            <constraint firstItem="oYz-KA-F9R" firstAttribute="bottom" secondItem="LQr-el-c3I" secondAttribute="bottom" constant="20" id="SHc-3n-3JR"/>
+                            <constraint firstItem="LQr-el-c3I" firstAttribute="leading" secondItem="oYz-KA-F9R" secondAttribute="leading" constant="40" id="bmH-G2-Qfd"/>
+                            <constraint firstItem="LQr-el-c3I" firstAttribute="height" secondItem="UWt-c0-aoU" secondAttribute="height" id="jam-76-TSd"/>
+                            <constraint firstItem="UWt-c0-aoU" firstAttribute="leading" secondItem="oYz-KA-F9R" secondAttribute="leading" constant="40" id="mft-AD-kWx"/>
+                            <constraint firstItem="oYz-KA-F9R" firstAttribute="trailing" secondItem="UWt-c0-aoU" secondAttribute="trailing" constant="40" id="xdM-Wj-5eI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oYz-KA-F9R"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fS0-Ni-pRZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftc-At-sEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678.26086956521749" y="-151.33928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="43K-vn-Wx4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pd8-KP-vlN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iA4-YE-tuh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99680942299999997" green="0.36613720659999999" blue="0.7255110145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MUR-li-JPH" kind="relationship" relationship="rootViewController" id="Rmx-fw-T2h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raT-wK-PlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231.8840579710145" y="-151.33928571428569"/>
+        </scene>
+    </scenes>
+</document>

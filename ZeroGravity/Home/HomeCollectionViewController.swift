@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MMBannerLayout
 private let reuseIdentifier = "HomeIdentifier"
 
 class HomeCollectionViewController: HorizontalPeekingPagesCollectionViewController,UIPageViewControllerDelegate {
@@ -17,12 +17,24 @@ class HomeCollectionViewController: HorizontalPeekingPagesCollectionViewControll
             collectionView?.reloadData()
         }
     }
+    @IBOutlet var HomecollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configurePageControl()
+        self.view.layoutIfNeeded()
+        HomecollectionView.showsHorizontalScrollIndicator = false
+        if let layout = HomecollectionView.collectionViewLayout as? MMBannerLayout {
+            let inset: CGFloat = 50
+            layout.itemSpace = 5
+            layout.itemSize = CGSize(width: layout.collectionView!.frame.size.width - inset * 2, height: layout.collectionView!.frame.size.height)
+            layout.minimuAlpha = 1.0
+        }
+        (HomecollectionView.collectionViewLayout as? MMBannerLayout)?.setInfinite(isInfinite: true, completed: nil)
     }
+    
     func configurePageControl() {
-       self.pageControl = UIPageControl(frame: CGRect(x: 0, y: 170, width: self.view.frame.width, height: 17))
+       self.pageControl = UIPageControl(frame: CGRect(x: 0, y: 176, width: self.view.frame.width, height: 15))
         self.pageControl.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
         self.pageControl.numberOfPages = dataSource.count
         self.pageControl.currentPage = 0
@@ -35,29 +47,23 @@ class HomeCollectionViewController: HorizontalPeekingPagesCollectionViewControll
     override func calculateSectionInset() -> CGFloat {
         return 40
     }
-    
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
+    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
     }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeIdentifier", for: indexPath as IndexPath) as! HomesliderCell
-        cell.deviceImg.image = UIImage(named:dataSource[indexPath.row])
-        return cell
-    }
-    
-    //    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-    //        let pageNumber = round(scrollView.contentOffset.x / scrollView.frame.size.width)
-    //        pageControl.currentPage = Int(pageNumber)
-    //    }
-    
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-        let index = scrollView.contentOffset.x / witdh
-        let roundedIndex = round(index)
-        self.pageControl.currentPage = Int(roundedIndex)
+    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeIdentifier", for: indexPath) as? HomesliderCell {
+            cell.deviceImg.image = UIImage(named:dataSource[indexPath.row])
+            return cell
+        }
+        return UICollectionViewCell()
     }
 
 }
 
+extension HomeCollectionViewController: BannerLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, focusAt indexPath: IndexPath?) {
+        if let indesPostion = indexPath?.row {
+        self.pageControl.currentPage = indesPostion
+        }
+    }
+}

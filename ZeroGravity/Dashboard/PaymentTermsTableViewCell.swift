@@ -27,7 +27,7 @@ class TermsCollectionViewCell: UICollectionViewCell,UITableViewDataSource,UITabl
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
         if let textlabel = header.textLabel {
-            textlabel.font = textlabel.font.withSize(13)
+            textlabel.font = UIFont(name: FONT.Ubuntu.rawValue, size: 15)
             textlabel.textAlignment = .center
         }
     }

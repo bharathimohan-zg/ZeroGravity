@@ -7,4 +7,6 @@ target 'zerogravity' do
     pod 'UICircularProgressRing'
     pod 'FlexibleSteppedProgressBar'
     pod 'RAMAnimatedTabBarController'
+    pod 'MMBannerLayout'
+    pod 'CircleProgressBar'
 end

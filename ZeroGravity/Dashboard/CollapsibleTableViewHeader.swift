@@ -12,6 +12,7 @@ class CollapsibleTableViewHeader: UITableViewCell {
     @IBOutlet weak var headrName: UILabel!
     @IBOutlet weak var indicateBtn: UIButton!
     @IBOutlet weak var expendCollapseBtn: UIButton!
+    @IBOutlet weak var STATUSIMG: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

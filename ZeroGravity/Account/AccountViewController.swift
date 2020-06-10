@@ -24,22 +24,8 @@ class AccountViewController: UIViewController,UITableViewDelegate,UITableViewDat
         userIcon.layer.cornerRadius = userIcon.frame.height/2
         userIcon.clipsToBounds = true
         self.navigationController?.isNavigationBarHidden = true
-//        if let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as? UIView {
-//            statusBar.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
-        
-//        }
-        if #available(iOS 13, *)
-        {
-            let statusBar = UIView(frame: (UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame)!)
-            statusBar.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
-            UIApplication.shared.keyWindow?.addSubview(statusBar)
-        } else {
-           // ADD THE STATUS BAR AND SET A CUSTOM COLOR
-           let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-           if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
-              statusBar.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
-           }
-        }
+        UIApplication.shared.statusBarUIView?.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
         if let templateImage = UIImage(named: "userIcon")?.withRenderingMode(.alwaysTemplate) {            let imageView = UIImageView(image: templateImage)
             userIcon.image = imageView.image
             userIcon.tintColor = .white
@@ -122,3 +108,35 @@ class AccountViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
 
 } 
+
+extension UIApplication {
+var statusBarUIView: UIView? {
+    if #available(iOS 13.0, *) {
+        let tag = 3848245
+
+        let keyWindow = UIApplication.shared.connectedScenes
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows.first
+
+        if let statusBar = keyWindow?.viewWithTag(tag) {
+            return statusBar
+        } else {
+            let height = keyWindow?.windowScene?.statusBarManager?.statusBarFrame ?? .zero
+            let statusBarView = UIView(frame: height)
+            statusBarView.tag = tag
+            statusBarView.layer.zPosition = 999999
+
+            keyWindow?.addSubview(statusBarView)
+            return statusBarView
+        }
+
+    } else {
+
+        if responds(to: Selector(("statusBar"))) {
+            return value(forKey: "statusBar") as? UIView
+        }
+    }
+    return nil
+  }
+}

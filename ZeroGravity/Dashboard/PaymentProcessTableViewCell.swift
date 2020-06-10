@@ -7,17 +7,15 @@
 //
 
 import UIKit
-import UICircularProgressRing
+import CircleProgressBar
 
 class PaymentProcessTableViewCell: UITableViewCell {
-    @IBOutlet weak var circuleProgressView: UICircularProgressRing!
 
+    @IBOutlet weak var circleProgressBar: CircleProgressBar!
     override func awakeFromNib() {
         super.awakeFromNib()
-        circuleProgressView.maxValue = 100
-        circuleProgressView.startProgress(to: 50, duration: 1.0) {
-        }
-
+        circleProgressBar.hintTextFont =  UIFont(name: FONT.Ubuntu.rawValue, size: 25)
+        circleProgressBar.setProgress(0.5, animated: true, duration: 0.3)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

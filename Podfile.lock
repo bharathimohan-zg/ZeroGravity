@@ -3,7 +3,9 @@ PODS:
   - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
   - CenteredCollectionView (2.2.1)
+  - CircleProgressBar (0.32)
   - FlexibleSteppedProgressBar (0.6.1)
+  - MMBannerLayout (5.0.8)
   - RAMAnimatedTabBarController (5.0.1)
   - ScrollableSegmentedControl (1.5.0)
   - UICircularProgressRing (6.2.1)
@@ -12,17 +14,21 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - CenteredCollectionView
+  - CircleProgressBar
   - FlexibleSteppedProgressBar
+  - MMBannerLayout
   - RAMAnimatedTabBarController
   - ScrollableSegmentedControl (~> 1.5.0)
   - UICircularProgressRing
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - AlamofireImage
     - CenteredCollectionView
+    - CircleProgressBar
     - FlexibleSteppedProgressBar
+    - MMBannerLayout
     - RAMAnimatedTabBarController
     - ScrollableSegmentedControl
     - UICircularProgressRing
@@ -31,11 +37,13 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   CenteredCollectionView: ba6e45fb7774627890621d73c8dd7dbd33391da9
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
   FlexibleSteppedProgressBar: 402203e2981409ce3785a5dbd3df0234093fbd58
+  MMBannerLayout: edc9bcf9826e066c482cb739d52d875eb406b199
   RAMAnimatedTabBarController: ec36fba2fa4679fd36db55098e3477fe9bd79f52
   ScrollableSegmentedControl: 2e64bbe8968a7fcd8aae5014434481464fcdfe60
   UICircularProgressRing: b52543c79dbd89844e13f0053e3f565b7d7efc5c
 
-PODFILE CHECKSUM: e26ce8bd52f3505eb6dc070488fea2fc88777e34
+PODFILE CHECKSUM: 873f820b0e67d62e9e9625ea794141374bd79813
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

@@ -285,7 +285,7 @@ open class SteppedProgressBar: UIView {
         if index >= currentTab - (justCheckCompleted ? 1 : 0) || ( activeImages ?? [] ).count <= index {
             //draw index
             if stepDrawingMode == .drawIndex  {
-                let font = UIFont.systemFont(ofSize: 12.0)
+                let font = UIFont(name: FONT.Ubuntu.rawValue, size: 12)
                 #if swift(>=4.0)
                 attributes[NSAttributedString.Key.font] = font
                 #else
@@ -300,9 +300,9 @@ open class SteppedProgressBar: UIView {
         titleCenter.y += circleRadius * 0.75 + titleOffset
         let title = titles[index]
         #if swift(>=4.0)
-        attributes[NSAttributedString.Key.font] = UIFont.boldSystemFont(ofSize: 12.0)
+        attributes[NSAttributedString.Key.font] = UIFont(name: FONT.Ubuntu.rawValue, size: 12)
         #else
-            attributes[NSFontAttributeName] = UIFont.boldSystemFont(ofSize: 12.0)
+            attributes[NSFontAttributeName] = UIFont(name: FONT.Ubuntu.rawValue, size: 12)
         #endif
         let attributedString = NSAttributedString(string: title, attributes: attributes)
         attributedString.draw(center: titleCenter)

@@ -18,43 +18,26 @@ class HomeViewController: UIViewController {
         :"Offers","Gift your Friend a Shoot":"Gift","Refer your Family and Friends":"Refer","Blogs":"Blogs","Need help?":"NeedHelp"]
     let homeNameArray = ["SpecialOffers","Gift your Friend a Shoot","Refer your Family and Friends","Blogs","Need help?"]
 
+    @IBOutlet weak var tableHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak var homeScrollview: UIScrollView!
     let homeTypeNameArray = ["Exclusive Savings just for you","Surprise your Friends","Earn Upto 10,000 INR","Every Week - Brand New Blog","Contact Our Customer Support Team"]
-    @IBOutlet var pageController: UIPageControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
-//        if let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as? UIView {
-//            statusBar.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
-//        }
-        if #available(iOS 13, *)
-             {
-                 let statusBar = UIView(frame: (UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame)!)
-                 statusBar.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
-                 UIApplication.shared.keyWindow?.addSubview(statusBar)
-             } else {
-                // ADD THE STATUS BAR AND SET A CUSTOM COLOR
-                let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
-                if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
-                   statusBar.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
-                }
-             }
+        UIApplication.shared.statusBarUIView?.backgroundColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 241/255.0, green: 107/255.0, blue: 182/255.0, alpha: 1)
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
+        self.homeScrollview.contentSize.height = CGFloat((self.homeNameArray.count * 96) + 180)
+        self.tableHeightConstraints.constant = CGFloat(self.homeNameArray.count * 96)
     }
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-
 }
 
 
 extension HomeViewController : UITableViewDataSource,UITableViewDelegate
 {
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -80,7 +63,6 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate
         }
         return cell
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let hometypeName = homeNameArray[indexPath.row]
         if hometypeName == "Refer your Family and Friends"

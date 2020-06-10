@@ -33,7 +33,7 @@ import UIKit
 		}
 	}
 	
-	var titleFont:UIFont = UIFont.systemFont(ofSize: 14.0) {
+    var titleFont:UIFont = UIFont(name: FONT.Ubuntu.rawValue, size: 15)! {
 		didSet {
 			title.font = titleFont
 			title.sizeToFit()
